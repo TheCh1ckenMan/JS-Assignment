@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title><jQuery/Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  </head>
+  <body>
+    
+    <div class="container-fluid"></div>
+    
+    <div class="row">
+    <h1 class="display-3">Bootstrap and jQuery Worksheet</h1>
+  </div>
+    
+    <div class= "row">  
+    <h2 class="display-2">Infosys Class Work</h2>
+  </div>
+
+    <div class="row boxesRow">
+      <div class="col firstBox boxes" id="first"></div>
+      <div class="col secondBox boxes" id="second"></div>
+      <div class="col thirdBox boxes" id="third"></div>
+    </div>
+    
+    <div class="row">
+      <h3 class="display-4">Change Buttons</h3>
+    </div>
+    
+    <div class="row changeButtonRow">
+      <div class="col"><button class= "btn-info" onclick="changeButton('first')">Change Button 1</button></div>
+      <div class="col"><button class= "btn-info" onclick="changeButton('second')">Change Button 2</button></div>
+      <div class="col"><button class= "btn-info" onclick="changeButton('third')">Change Button 3</button></div>
+      <div class="col"><button class= "btn-primary" onclick="changeAllButton('first', 'second', 'third')">Change All</button></div>
+    </div>
+
+    <div class="row">
+      <h4 class="display-5">Hide Buttons</h4>
+    </div>
+
+    <div class="row hideButtonRow">
+      <div class="col"><button class="btn-info" onclick="hideButton('first')" >Hide Box1</button></div>
+      <div class="col"><button class="btn-info" onclick="hideButton('second')">Hide Box 2</button></div>
+      <div class="col"><button class="btn-info" onclick="hideButton('third')">Hide Box 3</button></div>
+      <div class="col"><button class="btn-warning" onclick="hideAllButton('first', 'second', 'third')">Hide All</button></div>
+    </div>
+
+    <div class="row finalRow">
+      <div class="col"><button class="btn-danger" onclick="resetColors('first', 'second', 'third')">Reset Color</button></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"><button class="btn-success" onclick="showAllButton('first', 'second', 'third')">Show All</button></div>
+    </div>
+    
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="main.js" type= "text/Javascript"></script>
+  </body>
+</html>
